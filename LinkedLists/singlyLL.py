@@ -29,12 +29,7 @@ class LinkedList:
         if self.head == None:
             self.head = Node(value)
             self.curr = self.head
-
-        elif self.head.next == None:
-            node = Node(value)
-            self.head.next = node
-            self.curr = node
-
+            
         else:
             node = Node(value)
             self.curr.next = node
